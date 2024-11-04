@@ -230,6 +230,9 @@
   .resto-img {
     width: 100%;
   }
+  .resto-img img {
+    width: 100%;
+  }
   .main-container {
     border-radius: 40px;
     padding: 10px;
@@ -284,6 +287,9 @@
   .commande a {
     padding-inline: 30px;
   }
+  .part-two {
+    font-weight: 300;
+  }
 }
 @media (min-width: 768px) {
   body {
@@ -294,8 +300,7 @@
     width: 100px;
   }
   .logo {
-    padding-top: 20px;
-    padding-bottom: 13px;
+    padding: 30px 15px;
     background-color: white;
   }
   .logo img {
@@ -446,22 +451,26 @@
   .restaurants .restaurants__cards .card .card__content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  .restaurants .restaurants__cards .card .card__content a {
+    text-decoration: none;
   }
   .restaurants .restaurants__cards .card .card__content .card__text {
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 15px;
     padding-bottom: 15px;
-    width: 80%;
+    color: black;
   }
   .restaurants .restaurants__cards .card .card__content .card__text h3 {
     padding-bottom: 5px;
   }
-  .restaurants .restaurants__cards .card .card__content .card__text h3:focus {
-    color: red;
-  }
   .restaurants .restaurants__cards .card .card__content .card__text h3, .restaurants .restaurants__cards .card .card__content .card__text p {
     margin: 0;
+  }
+  .restaurants .restaurants__cards .card .card__content .heart {
+    margin-right: 25px;
   }
   .restaurants .restaurants__cards .card .card__content .fa-heart:focus {
     font-weight: 900;
@@ -505,5 +514,99 @@
   footer .text__footer .part-one, footer .text__footer .part-two {
     display: flex;
     margin-right: 30px;
+  }
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+  .prev {
+    float: left;
+    margin-top: 5px;
+  }
+  .prev a {
+    color: #353535;
+  }
+  .resto-img {
+    width: 100%;
+    height: 385px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .resto-img img {
+    width: 100%;
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .main-container .menu {
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    top: -50px;
+    background-color: #f6f6f6;
+    width: 75%;
+  }
+  .main-container .menu section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-inline: 20%;
+  }
+  .main-container .menu .resto-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .main-container .menu .resto-title h1 {
+    margin-right: 40px;
+    font-family: "Shrikhand", serif;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .main-container .menu .resto-title .heart .fa-heart:focus {
+    font-weight: 900;
+    color: #9747ff;
+  }
+  .main-container .menu .menu-part {
+    margin-bottom: 50px;
+  }
+  .main-container .menu .menu-subtitle {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  .main-container .menu .menu-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #e0e0e0;
+    margin-top: 15px;
+    padding: 10px 15px;
+  }
+  .main-container .menu .menu-card b {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .main-container .menu .menu-card p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .main-container .menu .menu-card span {
+    float: right;
+    font-weight: 500;
+    color: #353535;
+  }
+  .main-container .commande {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .commande a {
+    padding-inline: 30px;
+  }
+  .part-two {
+    font-weight: 300;
   }
 }/*# sourceMappingURL=style.css.map */

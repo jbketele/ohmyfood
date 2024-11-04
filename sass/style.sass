@@ -2,6 +2,7 @@
     font-family: "Roboto", sans-serif
 
 //Mobile
+    //Home
 @media (max-width:767.98px)
     body
         margin: 0
@@ -213,6 +214,7 @@
     footer i 
         padding-right: 10px
 
+    // Page restaurants
     .logo-img
         display: flex
         justify-content: center
@@ -226,6 +228,9 @@
 
     .resto-img
         width: 100%
+
+        img
+            width: 100%
 
     .main-container
         border-radius: 40px
@@ -281,6 +286,9 @@
         a
             padding-inline: 30px
 
+    .part-two
+        font-weight: 300
+
 @media (min-width:768px)
     body
         margin: 0
@@ -290,8 +298,8 @@
         width: 100px
 
     .logo
-        padding-top: 20px
-        padding-bottom: 13px
+        padding: 30px 15px
+
         background-color: white
 
     .logo img
@@ -440,21 +448,26 @@
                 .card__content
                     display: flex
                     align-items: center
+                    justify-content: space-between
+
+                    a
+                        text-decoration: none
 
                     .card__text
                         background-color: white
                         border-radius: 0 0 20px 20px
                         padding-left: 15px
                         padding-bottom: 15px
-                        width: 80%
+                        color: black
 
                         h3
                             padding-bottom: 5px
-                        h3:focus
-                            color: red
 
                         & h3, p
                             margin: 0
+
+                    .heart
+                        margin-right: 25px
 
                     .fa-heart:focus
                         font-weight: 900
@@ -494,3 +507,96 @@
             .part-one, .part-two
                 display: flex
                 margin-right: 30px
+
+    .logo-img
+        display: flex
+        justify-content: center
+
+    .prev
+        float: left
+        margin-top: 5px
+
+        a
+            color: #353535
+
+    .resto-img
+        width: 100%
+        height: 385px
+        object-fit: cover
+
+        img
+            width: 100%
+
+    .main-container
+        display: flex
+        justify-content: center
+        background-color: white
+
+        .menu
+            border-radius: 40px
+            padding: 10px
+            position: relative
+            top: -50px
+            background-color: #f6f6f6
+            width: 75%
+
+            section
+                display: flex
+                flex-direction: column
+                width: 60%
+                margin-inline: 20%
+
+            .resto-title
+                display: flex
+                align-items: baseline
+                justify-content: center
+
+                h1
+                    margin-right: 40px
+                    font-family: "Shrikhand", serif
+                    font-size: 28px
+                    font-weight: 500
+
+                .heart .fa-heart:focus
+                    font-weight: 900
+                    color: #9747ff
+
+            .menu-part
+                margin-bottom: 50px
+
+            .menu-subtitle
+                text-transform: uppercase
+                margin-bottom: 0
+                font-weight: 300
+
+            .menu-card
+                background-color: white
+                border-radius: 15px
+                box-shadow: 0px 5px 10px #e0e0e0
+                margin-top: 15px
+                padding: 10px 15px
+
+                b
+                    font-weight: 500
+                    font-size: 18px
+
+                p
+                    margin-top: 5px
+                    margin-bottom: 0
+                    font-weight: 300
+                    font-size: 15px
+
+                span
+                    float: right
+                    font-weight: 500
+                    color: #353535
+
+        .commande
+            display: flex
+            justify-content: center
+
+            a
+                padding-inline: 30px
+
+    .part-two
+        font-weight: 300
