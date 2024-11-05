@@ -601,6 +601,9 @@
     box-shadow: 0px 5px 10px #e0e0e0;
     margin-top: 15px;
     padding: 11px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
   }
   .background-menu .menu .menu-card b {
     font-weight: 500;
@@ -612,10 +615,20 @@
     font-weight: 300;
     font-size: 15px;
   }
-  .background-menu .menu .menu-card span {
+  .background-menu .menu .menu-card .price {
     float: right;
     font-weight: 500;
     color: #353535;
+  }
+  .background-menu .menu .menu-card .check {
+    display: none;
+  }
+  .background-menu .menu .menu-card:hover .check {
+    float: right;
+    height: 100%;
+    display: block;
+    background-color: #99e2d0;
+    color: white;
   }
   .background-menu .commande {
     display: flex;
