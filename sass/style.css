@@ -445,7 +445,10 @@
     border-radius: 20px;
     background-color: white;
   }
-  .restaurants .restaurants__cards .card img {
+  .restaurants .restaurants__cards .card a {
+    text-decoration: none;
+  }
+  .restaurants .restaurants__cards .card a img {
     width: 100%;
     border-radius: 20px 20px 0 0;
     height: 175px;
@@ -454,35 +457,32 @@
     -o-object-position: bottom;
        object-position: bottom;
   }
-  .restaurants .restaurants__cards .card .card__content {
+  .restaurants .restaurants__cards .card a .card__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .restaurants .restaurants__cards .card .card__content a {
-    text-decoration: none;
-  }
-  .restaurants .restaurants__cards .card .card__content .card__text {
+  .restaurants .restaurants__cards .card a .card__content .card__text {
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 15px;
     padding-bottom: 15px;
     color: black;
   }
-  .restaurants .restaurants__cards .card .card__content .card__text h3 {
+  .restaurants .restaurants__cards .card a .card__content .card__text h3 {
     padding-bottom: 5px;
   }
-  .restaurants .restaurants__cards .card .card__content .card__text h3, .restaurants .restaurants__cards .card .card__content .card__text p {
+  .restaurants .restaurants__cards .card a .card__content .card__text h3, .restaurants .restaurants__cards .card a .card__content .card__text p {
     margin: 0;
   }
-  .restaurants .restaurants__cards .card .card__content .heart {
+  .restaurants .restaurants__cards .card a .card__content .heart {
     margin-right: 25px;
   }
-  .restaurants .restaurants__cards .card .card__content .fa-heart:focus {
+  .restaurants .restaurants__cards .card a .card__content .fa-heart:focus {
     font-weight: 900;
     color: #9747ff;
   }
-  .restaurants .restaurants__cards .new {
+  .restaurants .restaurants__cards .card a .new {
     position: absolute;
     left: 570px;
     margin-top: 17px;
@@ -492,7 +492,7 @@
     padding: 7px 12px;
     border-radius: 3px;
   }
-  .restaurants .restaurants__cards #note {
+  .restaurants .restaurants__cards .card #note {
     -o-object-position: 0 -160px;
        object-position: 0 -160px;
   }
