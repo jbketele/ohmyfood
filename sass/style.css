@@ -497,8 +497,9 @@
     left: 430px;
     bottom: 50px;
   }
-  .restaurants .restaurants__cards .heart:focus {
-    fill: #9747ff;
+  .restaurants .restaurants__cards .fa-heart:focus {
+    font-weight: 900;
+    color: #9747ff;
   }
   .restaurants .restaurants__cards .new {
     position: relative;
