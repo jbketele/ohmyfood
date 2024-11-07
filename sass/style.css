@@ -456,8 +456,8 @@
     height: 175px;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: bottom;
-       object-position: bottom;
+    -o-object-position: 0 -100px;
+       object-position: 0 -100px;
   }
   .restaurants .restaurants__cards .card a .card__content {
     display: flex;
@@ -488,8 +488,8 @@
     color: #9747ff;
   }
   .restaurants .restaurants__cards .card #note {
-    -o-object-position: 0 -160px;
-       object-position: 0 -160px;
+    -o-object-position: 0 -245px;
+       object-position: 0 -245px;
   }
   .restaurants .restaurants__cards .heart {
     width: 22px;
@@ -614,11 +614,15 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 5px 10px #e0e0e0;
-    margin-top: 15px;
-    padding: 11px 15px;
+    margin-top: 12px;
+    padding: 15px;
+    width: 634px;
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    transition: background-color 0.3s ease;
+  }
+  .background-menu .menu .menu-card .card-text {
+    width: 100%;
   }
   .background-menu .menu .menu-card b {
     font-weight: 500;
@@ -636,23 +640,27 @@
     color: #353535;
   }
   .background-menu .menu .menu-card .check {
-    display: none;
-  }
-  .background-menu .menu .menu-card:hover .check {
-    float: right;
-    height: 100%;
-    display: block;
-    background-color: #99e2d0;
+    position: absolute;
+    left: 883px;
     color: white;
-  }
-  .background-menu .commande {
+    background-color: #99e2d0;
+    width: 59px;
+    height: 69px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
   }
-  .background-menu .commande a {
+  .background-menu .menu .menu-card:nth-child(1) {
+    top: 155px;
+  }
+  .background-menu .menu .menu-card:nth-child(2) {
+    top: 210px;
+  }
+  .background-menu .menu a {
     padding-inline: 30px;
   }
-  .background-menu .commande .explore {
+  .background-menu .menu .explore {
     margin: 0;
     text-decoration: none;
   }

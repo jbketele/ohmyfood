@@ -451,7 +451,7 @@
                         border-radius: 20px 20px 0 0
                         height: 175px
                         object-fit: cover
-                        object-position: bottom
+                        object-position: 0 -100px
 
                     .card__content
                         display: flex
@@ -482,7 +482,7 @@
                             color: #9747ff
 
                 #note
-                    object-position: 0 -160px
+                    object-position: 0 -245px
             .heart
                 width: 22px
                 position: relative
@@ -598,11 +598,15 @@
                 background-color: white
                 border-radius: 15px
                 box-shadow: 0px 5px 10px #e0e0e0
-                margin-top: 15px
-                padding: 11px 15px
+                margin-top: 12px
+                padding: 15px
+                width: 634px
                 display: flex
-                justify-content: space-between
                 align-items: end
+                transition: background-color 0.3s ease
+
+                .card-text
+                    width: 100%
 
                 b
                     font-weight: 500
@@ -620,19 +624,24 @@
                     color: #353535
 
                 .check
-                    display: none
+                    position: absolute
+                    left: 883px
+                    color: white
+                    background-color: #99e2d0
+                    width: 59px
+                    height: 69px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 0 15px 15px 0
+
+                &:nth-child(1)
+                    top: 155px
+
+                &:nth-child(2)
+                    top: 210px
 
             .menu-card:hover
-                .check
-                    float: right
-                    height: 100%
-                    display: block
-                    background-color: #99e2d0
-                    color: white
-
-        .commande
-            display: flex
-            justify-content: center
 
             a
                 padding-inline: 30px
