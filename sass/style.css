@@ -466,15 +466,13 @@
   }
   .restaurants .restaurants__cards a .card .restaurants-image .new {
     position: absolute;
-    right: 12px;
-    top: 13px;
+    right: 22px;
+    top: 4px;
     background-color: #99e2d0;
     color: #008766;
     border: 0;
-    padding: 7px 12px;
+    padding: 7px 11px;
     border-radius: 3px;
-    width: 80px;
-    height: 29px;
     font-size: 14px;
     font-weight: 500;
     display: flex;
