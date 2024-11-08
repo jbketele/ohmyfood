@@ -447,18 +447,38 @@
                     border-radius: 20px
                     background-color: white
 
-                    img
-                        width: 100%
-                        border-radius: 20px 20px 0 0
-                        height: 175px
-                        object-fit: cover
-                        object-position: 0 -100px
+                    .restaurants-image
                         position: relative
+                        img
+                            width: 100%
+                            border-radius: 20px 20px 0 0
+                            height: 175px
+                            object-fit: cover
+                            object-position: 0 -100px
+                            position: relative
+
+                        .new
+                            position: absolute
+                            right: 12px
+                            top: 13px
+                            background-color: #99e2d0
+                            color: #008766
+                            border: 0
+                            padding: 7px 12px
+                            border-radius: 3px
+                            width: 80px
+                            height: 29px
+                            font-size: 14px
+                            font-weight: 500
+                            display: flex
+                            justify-content: center
+                            align-items: center
 
                     .card__content
                         display: flex
                         align-items: center
                         justify-content: space-between
+                        position: relative
 
                         .card__text
                             background-color: white
@@ -477,22 +497,13 @@
                     object-position: 0 -245px
                 .heart
                     width: 22px
-                    position: relative
-                    left: 430px
-                    bottom: 50px
+                    position: absolute
+                    right: 30px
+                    bottom: 19px
+
                 .fa-heart:hover
                     font-weight: 900
                     color: #9747ff
-
-            .new
-                position: relative
-                left: 357px
-                bottom: 155px
-                background-color: #99e2d0
-                color: #008766
-                border: 0
-                padding: 7px 12px
-                border-radius: 3px
 
     footer
         background-color: #353535
@@ -596,6 +607,8 @@
                 display: flex
                 align-items: end
                 transition: background-color 0.3s ease
+                position: relative
+                overflow: hidden
 
                 .card-text
                     width: 100%
@@ -614,29 +627,37 @@
                     float: right
                     font-weight: 500
                     color: #353535
+                    transition: transform 330ms ease-in-out
 
                 .check
                     position: absolute
-                    left: 883px
+                    left: 670px
+                    top: 0
                     color: white
                     background-color: #99e2d0
                     width: 59px
-                    height: 69px
+                    height: 74px
                     display: flex
                     justify-content: center
                     align-items: center
                     border-radius: 0 15px 15px 0
-
-                &:nth-child(1)
-                    top: 155px
-
-                &:nth-child(2)
-                    top: 210px
+                    transition: transform 330ms ease-in-out
 
             .menu-card:hover
 
+                .check
+                    opacity: 1
+                    transform: translateX(-65px)
+
+                .price
+                    transform: translateX(-60px)
+
             a
                 padding-inline: 30px
+
+            .commande
+                display: flex
+                justify-content: center
 
             .explore
                 margin: 0
