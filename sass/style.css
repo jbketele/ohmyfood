@@ -439,7 +439,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants .restaurants__cards .card {
+  .restaurants .restaurants__cards a {
+    text-decoration: none;
+    color: black;
+  }
+  .restaurants .restaurants__cards a .card {
     width: 490px;
     height: 250px;
     overflow: hidden;
@@ -447,10 +451,7 @@
     border-radius: 20px;
     background-color: white;
   }
-  .restaurants .restaurants__cards .card a {
-    text-decoration: none;
-  }
-  .restaurants .restaurants__cards .card a img {
+  .restaurants .restaurants__cards a .card img {
     width: 100%;
     border-radius: 20px 20px 0 0;
     height: 175px;
@@ -458,46 +459,37 @@
        object-fit: cover;
     -o-object-position: 0 -100px;
        object-position: 0 -100px;
+    position: relative;
   }
-  .restaurants .restaurants__cards .card a .card__content {
+  .restaurants .restaurants__cards a .card .card__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .restaurants .restaurants__cards .card a .card__content .card__text {
+  .restaurants .restaurants__cards a .card .card__content .card__text {
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 15px;
     padding-bottom: 15px;
     color: black;
   }
-  .restaurants .restaurants__cards .card a .card__content .card__text h3 {
+  .restaurants .restaurants__cards a .card .card__content .card__text h3 {
     padding-bottom: 5px;
   }
-  .restaurants .restaurants__cards .card a .card__content .card__text h3, .restaurants .restaurants__cards .card a .card__content .card__text p {
+  .restaurants .restaurants__cards a .card .card__content .card__text h3, .restaurants .restaurants__cards a .card .card__content .card__text p {
     margin: 0;
   }
-  .restaurants .restaurants__cards .card a .card__content .heart {
-    margin-right: 25px;
-    width: 22px;
-    height: 22px;
-    border-radius: 0;
-  }
-  .restaurants .restaurants__cards .card a .card__content .fa-heart:focus-within {
-    font-weight: 900;
-    color: #9747ff;
-  }
-  .restaurants .restaurants__cards .card #note {
+  .restaurants .restaurants__cards a #note {
     -o-object-position: 0 -245px;
        object-position: 0 -245px;
   }
-  .restaurants .restaurants__cards .heart {
+  .restaurants .restaurants__cards a .heart {
     width: 22px;
     position: relative;
     left: 430px;
     bottom: 50px;
   }
-  .restaurants .restaurants__cards .fa-heart:focus {
+  .restaurants .restaurants__cards a .fa-heart:focus {
     font-weight: 900;
     color: #9747ff;
   }
@@ -592,7 +584,7 @@
     font-size: 28px;
     font-weight: 500;
   }
-  .background-menu .menu .resto-title .heart .fa-heart:focus {
+  .background-menu .menu .resto-title .heart .fa-heart:hover {
     font-weight: 900;
     color: #9747ff;
   }
