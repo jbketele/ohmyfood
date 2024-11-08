@@ -489,7 +489,7 @@
     left: 430px;
     bottom: 50px;
   }
-  .restaurants .restaurants__cards a .fa-heart:focus {
+  .restaurants .restaurants__cards a .fa-heart:hover {
     font-weight: 900;
     color: #9747ff;
   }
