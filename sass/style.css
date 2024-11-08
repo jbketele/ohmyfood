@@ -277,6 +277,11 @@
     box-shadow: 0px 5px 10px #e0e0e0;
     margin-top: 15px;
     padding: 10px 15px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
   }
   .menu-part .menu-card b {
     font-weight: 500;
@@ -288,10 +293,31 @@
     font-weight: 300;
     font-size: 15px;
   }
-  .menu-part .menu-card span {
+  .menu-part .menu-card .price {
     float: right;
     font-weight: 500;
     color: #353535;
+    transition: transform 330ms ease-in-out;
+  }
+  .menu-part .menu-card .check {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    color: white;
+    background-color: #99e2d0;
+    width: 59px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    transition: transform 330ms ease-in-out;
+  }
+  .menu-part .menu-card:focus .check {
+    transform: translateX(-65px);
+  }
+  .menu-part .menu-card:focus .price {
+    transform: translateX(-60px);
   }
   .commande {
     display: flex;
@@ -625,12 +651,10 @@
     width: 634px;
     display: flex;
     align-items: end;
+    justify-content: space-between;
     transition: background-color 0.3s ease;
     position: relative;
     overflow: hidden;
-  }
-  .background-menu .menu .menu-card .card-text {
-    width: 100%;
   }
   .background-menu .menu .menu-card b {
     font-weight: 500;
