@@ -144,6 +144,7 @@
     flex-wrap: wrap;
   }
   .restaurants .restaurants__cards a {
+    width: 100%;
     text-decoration: none;
     color: black;
   }
@@ -154,7 +155,10 @@
     border-radius: 20px;
     background-color: white;
   }
-  .restaurants .restaurants__cards .card img {
+  .restaurants .restaurants__cards .card .restaurants-image {
+    position: relative;
+  }
+  .restaurants .restaurants__cards .card .restaurants-image img {
     width: 99%;
     border-radius: 20px 20px 0 0;
     height: 175px;
@@ -163,7 +167,17 @@
     -o-object-position: bottom;
        object-position: bottom;
   }
-  .restaurants .restaurants__cards .card #note {
+  .restaurants .restaurants__cards .card .restaurants-image .new {
+    position: absolute;
+    right: 22px;
+    top: 4px;
+    background-color: #99e2d0;
+    color: #008766;
+    border: 0;
+    padding: 7px 12px;
+    border-radius: 3px;
+  }
+  .restaurants .restaurants__cards .card .restaurants-image #note {
     -o-object-position: 0 -160px;
        object-position: 0 -160px;
   }
@@ -184,22 +198,12 @@
   }
   .restaurants .restaurants__cards .card .heart {
     position: absolute;
-    left: 80%;
+    right: 30px;
     margin-top: -50px;
   }
-  .restaurants .restaurants__cards .card .fa-heart:focus {
+  .restaurants .restaurants__cards .card .fa-heart:hover {
     font-weight: 900;
     color: #9747ff;
-  }
-  .restaurants .restaurants__cards .card .new {
-    position: absolute;
-    right: 35px;
-    margin-top: 17px;
-    background-color: #99e2d0;
-    color: #008766;
-    border: 0;
-    padding: 7px 12px;
-    border-radius: 3px;
   }
   footer {
     background-color: #353535;
@@ -453,6 +457,7 @@
   }
   .restaurants .restaurants__cards a .card .restaurants-image {
     position: relative;
+    height: 70%;
   }
   .restaurants .restaurants__cards a .card .restaurants-image img {
     width: 100%;
@@ -480,16 +485,15 @@
     align-items: center;
   }
   .restaurants .restaurants__cards a .card .card__content {
+    position: relative;
+    height: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
   }
   .restaurants .restaurants__cards a .card .card__content .card__text {
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 15px;
-    padding-bottom: 15px;
     color: black;
   }
   .restaurants .restaurants__cards a .card .card__content .card__text h3 {
@@ -506,7 +510,7 @@
     width: 22px;
     position: absolute;
     right: 30px;
-    bottom: 19px;
+    bottom: 30px;
   }
   .restaurants .restaurants__cards a .fa-heart:focus {
     font-weight: 900;
