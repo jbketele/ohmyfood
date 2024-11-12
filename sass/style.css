@@ -292,7 +292,7 @@ a {
     text-transform: uppercase;
     margin-bottom: 0;
     font-weight: 300;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     -o-border-image: linear-gradient(to right, #99e2d0 50%, #f6f6f6 50%);
        border-image: linear-gradient(to right, #99e2d0 50%, #f6f6f6 50%);
     border-image-slice: 1;
