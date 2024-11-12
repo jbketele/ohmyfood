@@ -586,6 +586,9 @@ a
                 display: flex
                 margin-right: 30px
 
+    .body-restaurants
+        background-color: white
+
     .logo-img
         display: flex
         justify-content: center
@@ -609,46 +612,51 @@ a
     .main-container
         display: flex
         justify-content: center
-        background-color: white
 
     .background-menu
         width: 75%
         background-color: #f6f6f6
+        border-radius: 40px
+        position: absolute
+        top: 439px
+        display: flex
+        align-items: center
+        flex-direction: column
+        gap: 40px
+        padding-top: 51px
 
-        .menu
-            position: relative
-            border-radius: 40px
-            background-color: #f6f6f6
-            top: -45px
-            padding-top: 35px
+        .resto-title
+            display: flex
+            align-items: baseline
+            justify-content: center
 
-            .menu-content
-                display: flex
-                flex-direction: column
-                width: 60%
-                margin-inline: 20%
-
-            .resto-title
-                display: flex
-                align-items: baseline
-                justify-content: center
-
-                h1
-                    margin-right: 40px
-                    font-family: "Shrikhand", serif
-                    font-size: 28px
-                    font-weight: 500
+            h1
+                margin-right: 40px
+                font-family: "Shrikhand", serif
+                font-size: 28px
+                font-weight: 500
+                margin-bottom: 0
+                margin-top: 0
 
                 .heart .fa-heart:hover
                     font-weight: 900
                     color: #9747ff
 
+        .menu
+            border-radius: 40px
+            background-color: #f6f6f6
+
+            .menu-content
+                display: flex
+                flex-direction: column
+                gap: 40px
+
             .menu-part
-                margin-bottom: 35px
 
             .menu-subtitle
                 text-transform: uppercase
                 margin-bottom: 0
+                margin-top: 0
                 font-weight: 300
                 border-bottom: 2px solid
                 border-image: linear-gradient(to right, #99e2d0 50%, #f6f6f6 50%)
