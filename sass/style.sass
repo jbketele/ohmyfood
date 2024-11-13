@@ -651,6 +651,17 @@ a
                 gap: 40px
 
             .menu-part
+                opacity: 0
+                animation: fadeIn 0.5s ease forwards
+
+                @for $i from 1 through 10
+                    &:nth-child(#{"#{$i}"})
+                        animation-delay: (0.2s * $i)
+
+                @keyframes fadeIn
+                    to
+                        opacity: 1
+                        transform: translateY(0)
 
             .menu-subtitle
                 text-transform: uppercase
@@ -729,3 +740,47 @@ a
     .text__footer
         .part-two
             font-weight: 300
+
+// Variables pour les couleurs et tailles
+$loader-bg-color: white
+$spinner-border-color: #f3f3f3
+$spinner-border-top-color: #9356DC
+$loader-size: 50px
+$loader-delay: 2s // Durée estimée du chargement
+
+// Style pour le conteneur de chargement
+#loader
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $loader-bg-color
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 9999
+    animation: fadeOut 1s ease-out forwards
+    animation-delay: $loader-delay
+
+// Style du spinner
+.spinner
+    width: $loader-size
+    height: $loader-size
+    border: 6px solid $spinner-border-color
+    border-top: 6px solid $spinner-border-top-color
+    border-radius: 50%
+    animation: spin 1s linear infinite
+
+// Animation de rotation pour le spinner
+@keyframes spin
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+
+// Animation de sortie pour masquer le loader
+@keyframes fadeOut
+    to
+        opacity: 0
+        visibility: hidden
