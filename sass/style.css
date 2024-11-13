@@ -269,6 +269,7 @@ a {
     font-family: "Shrikhand", serif;
     font-size: 28px;
     font-weight: 500;
+    height: 27px;
   }
   .menu {
     display: flex;
@@ -291,6 +292,7 @@ a {
     width: -moz-fit-content;
     width: fit-content;
     margin-top: 0;
+    padding-bottom: 4px;
   }
   .menu-part .menu-card {
     background-color: white;
