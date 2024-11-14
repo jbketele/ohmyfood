@@ -202,6 +202,10 @@ a {
     right: 30px;
     margin-top: -50px;
   }
+  .restaurants .restaurants__cards .card .fa-heart:active {
+    font-weight: 900;
+    color: #9747ff;
+  }
   footer {
     background-color: #353535;
     color: white;
