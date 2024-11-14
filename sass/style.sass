@@ -316,6 +316,17 @@ a
             justify-content: space-between
             position: relative
             overflow: hidden
+            opacity: 0
+            animation: fadeIn 0.5s ease forwards
+
+            @for $i from 1 through 10
+                &:nth-child(#{"#{$i}"})
+                    animation-delay: (0.5s * $i)
+
+                @keyframes fadeIn
+                    to
+                        opacity: 1
+                        transform: translateY(0)
 
             b
                 font-weight: 500
@@ -702,6 +713,17 @@ a
                 transition: background-color 0.3s ease
                 position: relative
                 overflow: hidden
+                opacity: 0
+                animation: fadeIn 0.5s ease forwards
+
+                @for $i from 1 through 10
+                    &:nth-child(#{"#{$i}"})
+                        animation-delay: (0.5s * $i)
+
+                @keyframes fadeIn
+                    to
+                        opacity: 1
+                        transform: translateY(0)
 
                 b
                     font-weight: 500

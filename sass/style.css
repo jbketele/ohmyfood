@@ -403,6 +403,98 @@ a {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .menu-content .menu-card:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(2) {
+    animation-delay: 1s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(4) {
+    animation-delay: 2s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(6) {
+    animation-delay: 3s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(7) {
+    animation-delay: 3.5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(8) {
+    animation-delay: 4s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(9) {
+    animation-delay: 4.5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .menu-content .menu-card:nth-child(10) {
+    animation-delay: 5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .menu-content .menu-card b {
     font-weight: 500;
@@ -827,6 +919,44 @@ a {
     transition: background-color 0.3s ease;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .background-menu .menu .menu-card:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  .background-menu .menu .menu-card:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .background-menu .menu .menu-card:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  .background-menu .menu .menu-card:nth-child(4) {
+    animation-delay: 2s;
+  }
+  .background-menu .menu .menu-card:nth-child(5) {
+    animation-delay: 2.5s;
+  }
+  .background-menu .menu .menu-card:nth-child(6) {
+    animation-delay: 3s;
+  }
+  .background-menu .menu .menu-card:nth-child(7) {
+    animation-delay: 3.5s;
+  }
+  .background-menu .menu .menu-card:nth-child(8) {
+    animation-delay: 4s;
+  }
+  .background-menu .menu .menu-card:nth-child(9) {
+    animation-delay: 4.5s;
+  }
+  .background-menu .menu .menu-card:nth-child(10) {
+    animation-delay: 5s;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .background-menu .menu .menu-card b {
     font-weight: 500;
