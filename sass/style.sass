@@ -287,6 +287,7 @@ a
         display: flex
         flex-direction: column
         gap: 40px
+        width: 93%
 
     .menu-content
         display: flex
@@ -329,6 +330,14 @@ a
             overflow: hidden
             opacity: 0
             animation: fadeIn 0.5s ease forwards
+            cursor: pointer
+
+            label
+                width: 100%
+                display: flex
+                align-items: end
+                justify-content: space-between
+                cursor: pointer
 
             @for $i from 1 through 10
                 &:nth-child(#{"#{$i}"})
@@ -369,12 +378,18 @@ a
                 border-radius: 0 15px 15px 0
                 transition: transform 330ms ease-in-out
 
-        .menu-card:focus
-            .check
-                transform: translateX(-65px)
+            input[type="checkbox"]
+                display: none
 
-            .price
+            input[type="checkbox"]:checked + label .check
                 transform: translateX(-60px)
+            input[type="checkbox"]:checked + label .price
+                transform: translateX(-60px)
+            input[type="checkbox"]:checked + label p
+                width: 230px
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
 
     .commande
         display: flex
@@ -742,6 +757,13 @@ a
                 opacity: 0
                 animation: fadeIn 0.5s ease forwards
 
+                label
+                    width: 100%
+                    display: flex
+                    align-items: end
+                    justify-content: space-between
+                    cursor: pointer
+
                 @for $i from 1 through 10
                     &:nth-child(#{"#{$i}"})
                         animation-delay: (0.5s * $i)
@@ -781,14 +803,13 @@ a
                     border-radius: 0 15px 15px 0
                     transition: transform 330ms ease-in-out
 
-            .menu-card:hover
+            input[type="checkbox"]
+                display: none
 
-                .check
-                    opacity: 1
-                    transform: translateX(-65px)
-
-                .price
-                    transform: translateX(-60px)
+            input[type="checkbox"]:checked + label .check
+                transform: translateX(-60px)
+            input[type="checkbox"]:checked + label .price
+                transform: translateX(-60px)
 
             a
                 padding-inline: 30px
