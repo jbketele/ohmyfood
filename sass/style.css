@@ -201,10 +201,22 @@ a {
     position: absolute;
     right: 30px;
     margin-top: -50px;
+    cursor: pointer;
   }
-  .restaurants .restaurants__cards .card .fa-heart:active {
-    font-weight: 900;
-    color: #9747ff;
+  .restaurants .restaurants__cards .card .heart svg {
+    width: 25px;
+    height: 20px;
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 20px;
+    transition: fill 0.3s, stroke 0.3s;
+  }
+  .restaurants .restaurants__cards .card .heart input[type=checkbox] {
+    display: none;
+  }
+  .restaurants .restaurants__cards .card .heart input[type=checkbox]:checked + label svg {
+    fill: #9747ff;
+    stroke: #9747ff;
   }
   footer {
     background-color: #353535;
@@ -750,10 +762,24 @@ a {
        object-position: 0 -245px;
   }
   .restaurants .restaurants__cards a .heart {
-    width: 22px;
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    cursor: pointer;
+  }
+  .restaurants .restaurants__cards a .heart svg {
+    width: 25px;
+    height: 20px;
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 20px;
+    transition: fill 0.3s, stroke 0.3s;
+  }
+  .restaurants .restaurants__cards a .heart input[type=checkbox] {
+    display: none;
+  }
+  .restaurants .restaurants__cards a .heart input[type=checkbox]:checked + label svg {
+    fill: #9747ff;
+    stroke: #9747ff;
   }
   .fa-heart:hover {
     font-weight: 900;
