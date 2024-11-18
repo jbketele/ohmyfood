@@ -784,7 +784,7 @@ a {
     right: 30px;
     cursor: pointer;
   }
-  .restaurants .restaurants__cards a .heart svg {
+  svg {
     width: 25px;
     height: 20px;
     fill: transparent;
@@ -792,16 +792,12 @@ a {
     stroke-width: 20px;
     transition: fill 0.3s, stroke 0.3s;
   }
-  .restaurants .restaurants__cards a .heart input[type=checkbox] {
+  input[type=checkbox] {
     display: none;
   }
-  .restaurants .restaurants__cards a .heart input[type=checkbox]:checked + label svg {
+  input[type=checkbox]:checked + label svg {
     fill: #9747ff;
     stroke: #9747ff;
-  }
-  .fa-heart:hover {
-    font-weight: 900;
-    color: #9747ff;
   }
   footer {
     width: 100vw;
