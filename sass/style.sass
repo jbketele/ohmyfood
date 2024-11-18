@@ -6,401 +6,388 @@ a
 
 //Mobile
     //Home
-@media (max-width:767.98px)
-    body
-        margin: 0
-        background-color: #f6f6f6
-        position: relative
 
-    .logo
-        padding-top: 20px
-        padding-bottom: 13px
-        padding-inline: 15px
-        background-color: white
-        box-shadow: 0px 4px 10px #a9a9a9
+body
+    margin: 0
+    background-color: #f6f6f6
+    position: relative
 
-    .logo img
-        width: 175px
+.logo
+    padding-top: 20px
+    padding-bottom: 13px
+    padding-inline: 15px
+    background-color: white
+    box-shadow: 0px 4px 10px #a9a9a9
 
-    .center
-        display: flex
-        justify-content: center
+.logo img
+    width: 175px
 
-    header
-        display: flex
-        background-color: #eaeaea
-        width: 100%
-        margin-top: 0px
-        box-shadow: 0px 4px 10px #a9a9a9
+.center
+    display: flex
+    justify-content: center
 
-    header i
-        padding-top: 20px
-        padding-right: 20px
+header
+    display: flex
+    background-color: #eaeaea
+    width: 100%
+    margin-top: 0px
+    box-shadow: 0px 4px 10px #a9a9a9
 
-    header p 
-        margin-top: 13px
-        margin-bottom: 14px
+header i
+    padding-top: 20px
+    padding-right: 20px
+
+header p 
+    margin-top: 13px
+    margin-bottom: 14px
+
+h2
+    margin: 0
+    padding-top: 40px
+    padding-bottom: 10px
+
+.intro
+    padding-bottom: 57px
+
+.intro p
+    margin-top: 0
+    margin-bottom: 35px
+    font-weight: 300
+    color: #353535
+    font-size: 18px
+
+.explore
+    background: linear-gradient(to left top, #9356dc, #ff79da)
+    color: white
+    border: 0
+    border-radius: 30px
+    font-size: 16px
+    padding: 20px
+    box-shadow: 0px 4px 10px #a9a9a9
+    text-decoration: none
+
+.explore a
+    color: white
+    text-decoration: none
+
+.marge
+    padding-left: 10px
+    padding-right: 10px
+
+.etapes
+    background-color: white
+    padding-bottom: 30px
+
+.etapes h2
+    padding-top: 50px
+    padding-bottom: 25px
+    padding-left: 10px
+
+.etapes__button
+    display: flex
+    flex-direction: column
+    list-style: none
+    counter-reset: section // rénitialise le compteur
+    padding-left: 10px
+    margin-top: 0
+
+.etapes__button li
+    counter-increment: section // Incrémentation du compteur
+    display: flex
+    align-items: baseline
+
+.etapes__button li::before
+    content: counter(section) // ajouter un compteur personnalisé
+    border-radius: 50%
+    background-color: #9747ff
+    width: 25px
+    height: 25px
+    color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    position: sticky
+    margin-right: -15px
+
+.etape
+    height: 70px
+    border-radius: 20px
+    border: 0
+    font-size: 16px
+    display: flex
+    justify-content: start
+    align-items: center
+    background-color: #f6f6f6
+    box-shadow: 0px 5px 10px #e0e0e0
+    margin-bottom: 27px
+    margin-left: 0
+    width: 330px
+
+.etape i
+    padding-inline: 25px
+
+.fa-mobile-screen-button, .fa-list-ul
+    color: grey
+
+.fa-store
+    color: #9747ff
+
+.restaurants
+    margin-bottom: 65px
 
     h2
-        margin: 0
-        padding-top: 40px
+        margin-top: 50px
+        padding-top: 0
         padding-bottom: 10px
 
-    .intro
-        padding-bottom: 57px
-
-    .intro p
-        margin-top: 0
-        margin-bottom: 35px
-        font-weight: 300
-        color: #353535
-        font-size: 18px
-
-    .explore
-        background: linear-gradient(to left top, #9356dc, #ff79da)
-        color: white
-        border: 0
-        border-radius: 30px
-        font-size: 16px
-        padding: 20px
-        box-shadow: 0px 4px 10px #a9a9a9
-        text-decoration: none
-
-    .explore a
-        color: white
-        text-decoration: none
-
-    .marge
-        padding-left: 10px
-        padding-right: 10px
-
-    .etapes
-        background-color: white
-        padding-bottom: 30px
-
-    .etapes h2
-        padding-top: 50px
-        padding-bottom: 25px
-        padding-left: 10px
-
-    .etapes__button
+    .restaurants__cards
         display: flex
-        flex-direction: column
-        list-style: none
-        counter-reset: section // rénitialise le compteur
-        padding-left: 10px
-        margin-top: 0
+        flex-wrap: wrap
 
-    .etapes__button li
-        counter-increment: section // Incrémentation du compteur
+        a
+            width: 100%
+            text-decoration: none
+            color: black
+
+        .card
+            width: 100%
+            margin-top: 15px
+            margin-bottom: 5px
+            border-radius: 20px
+            background-color: white
+
+            .restaurants-image
+                position: relative
+
+                img
+                    width: 99%
+                    border-radius: 20px 20px 0 0
+                    height: 175px
+                    object-fit: cover
+                    object-position: bottom
+
+                .new
+                    position: absolute
+                    right: 22px
+                    top: 4px
+                    background-color: #99e2d0
+                    color: #008766
+                    border: 0
+                    padding: 7px 12px
+                    border-radius: 3px
+
+                #note
+                    object-position: 0 -160px
+
+            .card__content
+
+                .card__text
+                    background-color: white
+                    border-radius: 0 0 20px 20px
+                    padding-left: 15px
+                    padding-bottom: 15px
+                    width: 80%
+
+                    h3
+                        padding-top: 10px
+                        padding-bottom: 5px
+                        margin: 0
+                    & p
+                        margin: 0
+            .heart
+                position: absolute
+                right: 30px
+                margin-top: -50px
+                cursor: pointer
+
+svg
+    width: 25px
+    height: 20px
+    fill: transparent
+    stroke: #000
+    stroke-width: 20px
+    transition: fill 0.3s, stroke 0.3s
+
+input[type="checkbox"]
+    display: none
+
+input[type="checkbox"]:checked + label svg
+    fill: #9747ff
+    stroke: #9747ff
+footer
+    background-color: #353535
+    color: white
+    padding: 15px 20px
+
+.footer-restaurants
+    width: -webkit-fill-available
+
+.text__footer
+    margin-top: 15px
+
+.text__footer p
+    margin: 8px 0px
+
+.logo__footer img
+    width: 100px
+    margin-top: 10px
+
+footer i 
+    padding-right: 10px
+
+// Page restaurants
+.logo-img
+    display: flex
+    justify-content: center
+
+.prev
+    float: left
+    margin-top: 5px
+
+    a
+        color: #353535
+
+.resto-img
+    width: 100%
+    height: 275px
+    object-fit: cover
+
+    img
+        width: 100%
+
+.main-container
+    border-radius: 30px
+    position: absolute
+    top: 283px
+    width: -webkit-fill-available
+    background-color: #f6f6f6
+
+.background-menu
+    display: flex
+    flex-direction: column
+    align-items: center
+    top: 32px
+    position: relative
+
+    .resto-title
         display: flex
         align-items: baseline
 
-    .etapes__button li::before
-        content: counter(section) // ajouter un compteur personnalisé
-        border-radius: 50%
-        background-color: #9747ff
-        width: 25px
-        height: 25px
-        color: white
-        display: flex
-        justify-content: center
-        align-items: center
-        position: sticky
-        margin-right: -15px
-
-    .etape
-        height: 70px
-        border-radius: 20px
-        border: 0
-        font-size: 16px
-        display: flex
-        justify-content: start
-        align-items: center
-        background-color: #f6f6f6
-        box-shadow: 0px 5px 10px #e0e0e0
-        margin-bottom: 27px
-        margin-left: 0
-        width: 330px
-
-    .etape i
-        padding-inline: 25px
-
-    .fa-mobile-screen-button, .fa-list-ul
-        color: grey
-
-    .fa-store
-        color: #9747ff
-
-    .restaurants
-        margin-bottom: 65px
-
-        h2
-            margin-top: 50px
-            padding-top: 0
-            padding-bottom: 10px
-
-        .restaurants__cards
-            display: flex
-            flex-wrap: wrap
-
-            a
-                width: 100%
-                text-decoration: none
-                color: black
-
-            .card
-                width: 100%
-                margin-top: 15px
-                margin-bottom: 5px
-                border-radius: 20px
-                background-color: white
-
-                .restaurants-image
-                    position: relative
-
-                    img
-                        width: 99%
-                        border-radius: 20px 20px 0 0
-                        height: 175px
-                        object-fit: cover
-                        object-position: bottom
-
-                    .new
-                        position: absolute
-                        right: 22px
-                        top: 4px
-                        background-color: #99e2d0
-                        color: #008766
-                        border: 0
-                        padding: 7px 12px
-                        border-radius: 3px
-
-                    #note
-                        object-position: 0 -160px
-
-                .card__content
-
-                    .card__text
-                        background-color: white
-                        border-radius: 0 0 20px 20px
-                        padding-left: 15px
-                        padding-bottom: 15px
-                        width: 80%
-
-                        h3
-                            padding-top: 10px
-                            padding-bottom: 5px
-                            margin: 0
-                        & p
-                            margin: 0
-                .heart
-                    position: absolute
-                    right: 30px
-                    margin-top: -50px
-                    cursor: pointer
-
-                    svg
-                        width: 25px
-                        height: 20px
-                        fill: transparent
-                        stroke: #000
-                        stroke-width: 20px
-                        transition: fill 0.3s, stroke 0.3s
-
-                    input[type="checkbox"]
-                        display: none
-
-                    input[type="checkbox"]:checked + label svg
-                        fill: #9747ff
-                        stroke: #9747ff
-    footer
-        background-color: #353535
-        color: white
-        padding: 15px 20px
-
-    .footer-restaurants
-        width: -webkit-fill-available
-
-    .text__footer
-        margin-top: 15px
-
-    .text__footer p
-        margin: 8px 0px
-
-    .logo__footer img
-        width: 100px
-        margin-top: 10px
-
-    footer i 
-        padding-right: 10px
-
-    // Page restaurants
-    .logo-img
-        display: flex
-        justify-content: center
-
-    .prev
-        float: left
-        margin-top: 5px
-
-        a
-            color: #353535
-
-    .resto-img
-        width: 100%
-        height: 275px
-        object-fit: cover
-
-        img
-            width: 100%
-
-    .main-container
-        border-radius: 30px
-        position: absolute
-        top: 283px
-        width: -webkit-fill-available
-        background-color: #f6f6f6
-
-    .background-menu
-        display: flex
-        flex-direction: column
-        align-items: center
-        gap: 40px
-        top: 32px
-        position: relative
-
-        .resto-title
-            display: flex
-            align-items: baseline
-
-            h1
-                margin-right: 40px
-                margin-bottom: 0
-                margin-top: 0
-                font-family: "Shrikhand", serif
-                font-size: 28px
-                font-weight: 500
-                height: 27px
+        h1
+            margin-right: 40px
+            margin-bottom: 0
+            margin-top: 0
+            font-family: "Shrikhand", serif
+            font-size: 28px
+            font-weight: 500
+            height: 27px
 
     .menu
         display: flex
         flex-direction: column
         gap: 40px
-        width: 93%
 
     .menu-content
         display: flex
         flex-direction: column
-        gap: 40px
-        .menu-part
-            opacity: 0
-            animation: fadeIn 0.5s ease forwards
 
-            @for $i from 1 through 10
-                &:nth-child(#{"#{$i}"})
-                    animation-delay: (0.5s * $i)
+    .menu-subtitle
+        text-transform: uppercase
+        margin-bottom: 0
+        font-weight: 300
+        border-bottom: 3px solid
+        border-image: linear-gradient(to right, #99e2d0 50%, #f6f6f6 50%)
+        border-image-slice: 1
+        width: fit-content
+        margin-top: 0
+        padding-bottom: 4px
+        margin-top: 40px
 
-                @keyframes fadeIn
-                    to
-                        opacity: 1
-                        transform: translateY(0)
+    .menu-card
+        background-color: white
+        border-radius: 15px
+        box-shadow: 0px 5px 10px #e0e0e0
+        margin-top: 12px
+        padding: 12px
+        display: flex
+        align-items: end
+        justify-content: space-between
+        position: relative
+        overflow: hidden
+        opacity: 0
+        animation: fadeIn 0.5s ease forwards
+        cursor: pointer
 
-        .menu-subtitle
-            text-transform: uppercase
-            margin-bottom: 0
-            font-weight: 300
-            border-bottom: 3px solid
-            border-image: linear-gradient(to right, #99e2d0 50%, #f6f6f6 50%)
-            border-image-slice: 1
-            width: fit-content
-            margin-top: 0
-            padding-bottom: 4px
+        @for $i from 1 through 10
+            &:nth-child(#{"#{$i}"})
+                animation-delay: 0.2s * $i
 
-        .menu-card
-            background-color: white
-            border-radius: 15px
-            box-shadow: 0px 5px 10px #e0e0e0
-            margin-top: 12px
-            padding: 12px
+        @keyframes fadeIn
+            to
+                opacity: 1
+                transform: translateY(0)
+
+        label
+            width: 100%
             display: flex
             align-items: end
             justify-content: space-between
-            position: relative
-            overflow: hidden
-            opacity: 0
-            animation: fadeIn 0.5s ease forwards
             cursor: pointer
 
-            label
-                width: 100%
-                display: flex
-                align-items: end
-                justify-content: space-between
-                cursor: pointer
+        b
+            font-weight: 500
+            font-size: 18px
 
-            @for $i from 1 through 10
-                &:nth-child(#{"#{$i}"})
-                    animation-delay: (0.5s * $i)
-
-                @keyframes fadeIn
-                    to
-                        opacity: 1
-                        transform: translateY(0)
-
-            b
-                font-weight: 500
-                font-size: 18px
-
-            p
-                margin-top: 5px
-                margin-bottom: 0
-                font-weight: 300
-                font-size: 15px
-
-            .price
-                float: right
-                font-weight: 500
-                color: #353535
-                transition: transform 330ms ease-in-out
-
-            .check
-                position: absolute
-                right: -60px
-                top: 0
-                color: white
-                background-color: #99e2d0
-                width: 59px
-                height: 74px
-                display: flex
-                justify-content: center
-                align-items: center
-                border-radius: 0 15px 15px 0
-                transition: transform 330ms ease-in-out
-
-            input[type="checkbox"]
-                display: none
-
-            input[type="checkbox"]:checked + label .check
-                transform: translateX(-60px)
-            input[type="checkbox"]:checked + label .price
-                transform: translateX(-60px)
-            input[type="checkbox"]:checked + label p
-                width: 230px
-                overflow: hidden
-                white-space: nowrap
-                text-overflow: ellipsis
-
-    .commande
-        display: flex
-        justify-content: center
-
-        a
-            padding: 15px 40px
-
-    .text-footer
-        .part-two
+        p
+            margin-top: 5px
+            margin-bottom: 0
             font-weight: 300
+            font-size: 15px
+
+        .price
+            float: right
+            font-weight: 500
+            color: #353535
+            transition: transform 330ms ease-in-out
+
+        .check
+            position: absolute
+            right: -60px
+            top: 0
+            color: white
+            background-color: #99e2d0
+            width: 59px
+            height: 74px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 0 15px 15px 0
+            transition: transform 330ms ease-in-out
+
+        input[type="checkbox"]
+            display: none
+
+        input[type="checkbox"]:checked + label .check
+            transform: translateX(-60px)
+        input[type="checkbox"]:checked + label .price
+            transform: translateX(-60px)
+        input[type="checkbox"]:checked + label p
+            width: 230px
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+
+.commande
+    display: flex
+    justify-content: center
+    margin: 40px 0
+
+    a
+        padding: 15px 40px
+
+.text-footer
+    .part-two
+        font-weight: 300
 
 @media (min-width:768px)
     body
@@ -474,40 +461,42 @@ a
         opacity: 0.8
         box-shadow: 0px 4px 10px 4px #a9a9a9
 
-    .etapes
-        background-color: white
-        padding-bottom: 30px
-
         h2
             padding-top: 50px
             padding-bottom: 25px
             margin-left: 215px
 
-        .etapes__button
+    .etapes
+        display: flex
+        flex-direction: column
+        align-items: start
+        padding: 0 180px
+
+    .etapes__button
+        display: flex
+        justify-content: center
+        flex-direction: row
+        list-style: none
+        counter-reset: section // rénitialise le compteur
+        margin-top: 0
+
+        li
+            counter-increment: section // Incrémentation du compteur
+            display: flex
+            align-items: baseline
+
+        li::before
+            content: counter(section) // ajouter un compteur personnalisé
+            border-radius: 50%
+            background-color: #9747ff
+            width: 25px
+            height: 25px
+            color: white
             display: flex
             justify-content: center
-            list-style: none
-            counter-reset: section // rénitialise le compteur
-            padding-left: 85px
-            margin-top: 0
-
-            li
-                counter-increment: section // Incrémentation du compteur
-                display: flex
-                align-items: baseline
-
-            li::before
-                content: counter(section) // ajouter un compteur personnalisé
-                border-radius: 50%
-                background-color: #9747ff
-                width: 25px
-                height: 25px
-                color: white
-                display: flex
-                justify-content: center
-                align-items: center
-                position: sticky
-                margin-right: -15px
+            align-items: center
+            position: sticky
+            margin-right: -15px
 
         .etape
             height: 70px
@@ -547,6 +536,7 @@ a
             justify-content: space-between
 
             a
+                width: auto
                 text-decoration: none
                 color: black
                 margin-bottom: 50px
@@ -602,12 +592,14 @@ a
                             & h3, p
                                 margin: 0
 
+                    .heart
+                        position: absolute
+                        right: 30px
+                        cursor: pointer
+                        margin: 0
+
                 #note
                     object-position: 0 -245px
-                .heart
-                    position: absolute
-                    right: 30px
-                    cursor: pointer
 
     svg
         width: 25px
@@ -674,17 +666,17 @@ a
     .main-container
         display: flex
         justify-content: center
+        top: 439px
 
     .background-menu
         width: 75%
         background-color: #f6f6f6
         border-radius: 40px
         position: absolute
-        top: 439px
+        top: 0
         display: flex
         align-items: center
         flex-direction: column
-        gap: 40px
         padding-top: 51px
 
         .resto-title
@@ -700,10 +692,6 @@ a
                 margin-bottom: 0
                 margin-top: 0
 
-                .heart .fa-heart:hover
-                    font-weight: 900
-                    color: #9747ff
-
         .menu
             border-radius: 40px
             background-color: #f6f6f6
@@ -711,25 +699,23 @@ a
             .menu-content
                 display: flex
                 flex-direction: column
-                gap: 40px
 
-            .menu-part
+            .menu-card
                 opacity: 0
                 animation: fadeIn 0.5s ease forwards
 
-                @for $i from 1 through 10
-                    &:nth-child(#{"#{$i}"})
-                        animation-delay: (0.5s * $i)
+                @for $j from 1 through 10
+                    &:nth-of-type(#{$j})
+                        animation-delay: 0.2s * $j
 
                 @keyframes fadeIn
                     to
                         opacity: 1
-                        transform: translateY(0)
 
             .menu-subtitle
                 text-transform: uppercase
                 margin-bottom: 0
-                margin-top: 0
+                margin-top: 40px
                 padding-bottom: 6px
                 font-weight: 300
                 border-bottom: 3px solid
@@ -749,17 +735,6 @@ a
                 justify-content: space-between
                 position: relative
                 overflow: hidden
-                opacity: 0
-                animation: fadeIn 0.5s ease forwards
-
-                @for $i from 1 through 10
-                    &:nth-child(#{"#{$i}"})
-                        animation-delay: (0.5s * $i)
-
-                @keyframes fadeIn
-                    to
-                        opacity: 1
-                        transform: translateY(0)
 
                 label
                     width: 100%
@@ -812,6 +787,7 @@ a
         .commande
             display: flex
             justify-content: center
+            margin: 40px 0
 
             a
                 padding: 16px 40px
