@@ -933,10 +933,6 @@ a {
       transform: translateY(0);
     }
   }
-  .background-menu .menu .menu-part .menu-card {
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-  }
   .background-menu .menu .menu-subtitle {
     text-transform: uppercase;
     margin-bottom: 0;
