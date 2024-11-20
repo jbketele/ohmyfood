@@ -4,6 +4,9 @@
 a
     text-decoration: none
 
+input[type="checkbox"]
+    display: none
+
 //Mobile
     //Home
 
@@ -210,12 +213,14 @@ svg
     stroke-width: 20px
     transition: fill 0.3s, stroke 0.3s
 
-input[type="checkbox"]
-    display: none
-
 input[type="checkbox"]:checked + .heart svg
     fill: #9747ff
     stroke: #9747ff
+
+input[type="checkbox"]:checked + label svg
+    fill: #9747ff
+    stroke: #9747ff
+
 footer
     background-color: #353535
     color: white
