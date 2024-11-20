@@ -211,7 +211,7 @@ svg
 input[type="checkbox"]
     display: none
 
-input[type="checkbox"]:checked + label svg
+input[type="checkbox"]:checked + .heart svg
     fill: #9747ff
     stroke: #9747ff
 footer
@@ -520,36 +520,36 @@ $loader-delay: 1s // Durée estimée du chargement
                 width: auto
                 margin-bottom: 50px
 
-                .card
-                    width: 490px
-                    height: 250px
-                    overflow: hidden
+            .card
+                width: 490px
+                height: 250px
+                overflow: hidden
+                position: relative
 
-                    .restaurants-image
-                        height: 70%
-                        img
-                            width: 100%
-                            object-position: 0 -100px
-                            position: relative
+                .restaurants-image
+                    height: 70%
+                    img
+                        width: 100%
+                        object-position: 0 -100px
+                        position: relative
 
-                        .new
-                            font-size: 14px
-                            font-weight: 500
-                            display: flex
-                            justify-content: center
-                            align-items: center
+                    .new
+                        font-size: 14px
+                        font-weight: 500
+                        display: flex
+                        justify-content: center
+                        align-items: center
 
-                        #note
-                            object-position: 0 -245px
+                    #note
+                        object-position: 0 -245px
 
                     .card__content
                         position: relative
                         height: 30%
                         display: flex
                         align-items: center
-
-                    .heart
-                        margin: 0
+            .heart
+                top: 245px
 
     footer
         display: flex

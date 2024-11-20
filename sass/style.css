@@ -238,7 +238,7 @@ input[type=checkbox] {
   display: none;
 }
 
-input[type=checkbox]:checked + label svg {
+input[type=checkbox]:checked + .heart svg {
   fill: #9747ff;
   stroke: #9747ff;
 }
@@ -586,39 +586,40 @@ footer i {
     width: auto;
     margin-bottom: 50px;
   }
-  .restaurants .restaurants__cards a .card {
+  .restaurants .restaurants__cards .card {
     width: 490px;
     height: 250px;
     overflow: hidden;
+    position: relative;
   }
-  .restaurants .restaurants__cards a .card .restaurants-image {
+  .restaurants .restaurants__cards .card .restaurants-image {
     height: 70%;
   }
-  .restaurants .restaurants__cards a .card .restaurants-image img {
+  .restaurants .restaurants__cards .card .restaurants-image img {
     width: 100%;
     -o-object-position: 0 -100px;
        object-position: 0 -100px;
     position: relative;
   }
-  .restaurants .restaurants__cards a .card .restaurants-image .new {
+  .restaurants .restaurants__cards .card .restaurants-image .new {
     font-size: 14px;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .restaurants .restaurants__cards a .card .restaurants-image #note {
+  .restaurants .restaurants__cards .card .restaurants-image #note {
     -o-object-position: 0 -245px;
        object-position: 0 -245px;
   }
-  .restaurants .restaurants__cards a .card .card__content {
+  .restaurants .restaurants__cards .card .restaurants-image .card__content {
     position: relative;
     height: 30%;
     display: flex;
     align-items: center;
   }
-  .restaurants .restaurants__cards a .card .heart {
-    margin: 0;
+  .restaurants .restaurants__cards .heart {
+    top: 245px;
   }
   footer {
     display: flex;
