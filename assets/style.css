@@ -763,7 +763,7 @@ footer i {
   }
   .background-menu .menu .menu-content {
     width: 634px;
-    padding-inline: 210px;
+    padding-inline: 223px;
   }
   .background-menu .menu input[type=checkbox]:checked + label .check {
     transform: translateX(-94px);
