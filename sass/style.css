@@ -218,11 +218,12 @@ h2 {
 .restaurants .restaurants__cards .card .card__content .card__text p {
   margin: 0;
 }
-.restaurants .restaurants__cards .card .heart {
+.restaurants .restaurants__cards .heart {
   position: absolute;
   right: 30px;
   margin-top: -50px;
   cursor: pointer;
+  top: 1200px;
 }
 
 svg {
