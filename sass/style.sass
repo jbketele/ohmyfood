@@ -378,9 +378,6 @@ footer i
             border-radius: 0 15px 15px 0
             transition: transform 330ms ease-in-out
 
-        input[type="checkbox"]
-            display: none
-
         input[type="checkbox"]:checked + label .check
             transform: translateX(-59px)
         input[type="checkbox"]:checked + label .price
@@ -656,6 +653,12 @@ $loader-delay: 1s // Durée estimée du chargement
                 transform: translateX(-60px)
             input[type="checkbox"]:checked + label .price
                 transform: translateX(-60px)
+            input[type="checkbox"]:checked + label .card-text b,
+            input[type="checkbox"]:checked + label .card-text p
+                width: auto
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
 
     .text__footer
         .part-two
