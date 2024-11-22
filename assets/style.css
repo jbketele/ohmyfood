@@ -659,7 +659,7 @@ footer i {
     text-align: end;
   }
   .footer-restaurants {
-    width: 100vw;
+    width: 95vw;
   }
   .body-restaurants {
     background-color: white;
@@ -694,10 +694,11 @@ footer i {
     border-radius: 40px;
     background-color: #f6f6f6;
     width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .background-menu .menu .menu-content {
-    width: 93%;
-    padding-left: 3%;
+    width: auto;
   }
   .background-menu .menu .menu-card {
     padding: 12px 15px;
@@ -776,6 +777,5 @@ footer i {
   }
   .background-menu .menu .menu-content {
     width: 634px;
-    padding-inline: 223px;
   }
 }
