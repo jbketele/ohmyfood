@@ -227,7 +227,7 @@ footer
     padding: 15px 20px
 
 .footer-restaurants
-    width: 100vw
+    width: -webkit-fill-available
 
 .text__footer
     margin-top: 15px
@@ -336,15 +336,20 @@ footer i
                 transform: translateY(0)
 
         label
-            width: 100%
             display: flex
             align-items: end
             justify-content: space-between
+            gap: 5px
             cursor: pointer
+            width: 100%
+
+        .card-text
+            width: 100%
 
         b
             font-weight: 500
             font-size: 18px
+            display: block
 
         p
             margin-top: 5px
@@ -376,10 +381,11 @@ footer i
             display: none
 
         input[type="checkbox"]:checked + label .check
-            transform: translateX(-60px)
+            transform: translateX(-59px)
         input[type="checkbox"]:checked + label .price
             transform: translateX(-60px)
-        input[type="checkbox"]:checked + label p
+        input[type="checkbox"]:checked + label .card-text b,
+        input[type="checkbox"]:checked + label .card-text p
             width: 228px
             overflow: hidden
             white-space: nowrap
@@ -441,6 +447,7 @@ $loader-delay: 1s // Durée estimée du chargement
         opacity: 0
         visibility: hidden
 
+// Tablet
 @media (min-width:768px)
     img
         width: 100px
@@ -581,6 +588,9 @@ $loader-delay: 1s // Durée estimée du chargement
             .part-one
                 p
                     text-align: end
+
+    .footer-restaurants
+        width: 100vw
 
     .body-restaurants
         background-color: white

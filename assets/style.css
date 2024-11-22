@@ -257,7 +257,7 @@ footer {
 }
 
 .footer-restaurants {
-  width: 100vw;
+  width: -webkit-fill-available;
 }
 
 .text__footer {
@@ -404,15 +404,20 @@ footer i {
   }
 }
 .background-menu .menu-card label {
-  width: 100%;
   display: flex;
   align-items: end;
   justify-content: space-between;
+  gap: 5px;
   cursor: pointer;
+  width: 100%;
+}
+.background-menu .menu-card .card-text {
+  width: 100%;
 }
 .background-menu .menu-card b {
   font-weight: 500;
   font-size: 18px;
+  display: block;
 }
 .background-menu .menu-card p {
   margin-top: 5px;
@@ -444,12 +449,13 @@ footer i {
   display: none;
 }
 .background-menu .menu-card input[type=checkbox]:checked + label .check {
-  transform: translateX(-60px);
+  transform: translateX(-59px);
 }
 .background-menu .menu-card input[type=checkbox]:checked + label .price {
   transform: translateX(-60px);
 }
-.background-menu .menu-card input[type=checkbox]:checked + label p {
+.background-menu .menu-card input[type=checkbox]:checked + label .card-text b,
+.background-menu .menu-card input[type=checkbox]:checked + label .card-text p {
   width: 228px;
   overflow: hidden;
   white-space: nowrap;
@@ -654,6 +660,9 @@ footer i {
   }
   footer .text__footer .part-one p {
     text-align: end;
+  }
+  .footer-restaurants {
+    width: 100vw;
   }
   .body-restaurants {
     background-color: white;
