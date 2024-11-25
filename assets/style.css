@@ -769,7 +769,7 @@ footer i {
   .etapes__button .etape {
     width: 330px;
   }
-  .etapes__button .restaurants__cards {
+  .restaurants .restaurants__cards {
     justify-content: space-evenly;
   }
   .background-menu .menu .menu-content {
