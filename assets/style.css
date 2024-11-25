@@ -753,7 +753,7 @@ footer i {
   }
   .background-menu .menu input[type=checkbox]:checked + label .card-text b,
   .background-menu .menu input[type=checkbox]:checked + label .card-text p {
-    width: auto;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
