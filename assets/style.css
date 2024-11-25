@@ -762,18 +762,15 @@ footer i {
     font-weight: 300;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .etapes {
     padding: 0 180px;
   }
   .etapes__button .etape {
     width: 330px;
   }
-  .restaurants {
-    margin: 30px 185px;
-  }
-  .restaurants .restaurants__cards {
-    justify-content: space-between;
+  .etapes__button .restaurants__cards {
+    justify-content: space-evenly;
   }
   .background-menu .menu .menu-content {
     width: 634px;
