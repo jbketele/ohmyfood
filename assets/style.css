@@ -104,6 +104,7 @@ h2 {
 .etapes__button {
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style: none;
   counter-reset: section;
   padding-left: 10px;
@@ -252,8 +253,11 @@ input[type=checkbox]:checked + label svg {
 
 footer {
   background-color: #353535;
-  color: white;
   padding: 15px 20px;
+}
+footer .part-one, footer .part-two {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-restaurants {
@@ -264,8 +268,9 @@ footer {
   margin-top: 15px;
 }
 
-.text__footer p {
+.text__footer a {
   margin: 8px 0px;
+  color: white;
 }
 
 .logo__footer img {
@@ -340,6 +345,7 @@ footer i {
 }
 .background-menu .menu-subtitle {
   text-transform: uppercase;
+  font-size: 16px;
   margin-bottom: 0;
   font-weight: 300;
   border-bottom: 3px solid;
@@ -350,7 +356,6 @@ footer i {
   width: fit-content;
   margin-top: 0;
   padding-bottom: 4px;
-  margin-top: 40px;
 }
 .background-menu .menu-card {
   background-color: white;
@@ -405,11 +410,11 @@ footer i {
 }
 .background-menu .menu-card label {
   display: flex;
-  align-items: end;
   justify-content: space-between;
   gap: 5px;
   cursor: pointer;
   width: 100%;
+  flex-direction: column;
 }
 .background-menu .menu-card .card-text {
   width: 100%;
@@ -418,15 +423,17 @@ footer i {
   font-weight: 500;
   font-size: 18px;
   display: block;
+  margin: 0;
 }
-.background-menu .menu-card p {
+.background-menu .menu-card .description {
   margin-top: 5px;
   margin-bottom: 0;
   font-weight: 300;
   font-size: 15px;
 }
 .background-menu .menu-card .price {
-  float: right;
+  position: absolute;
+  right: 20px;
   font-weight: 500;
   color: #353535;
   transition: transform 330ms ease-in-out;
@@ -449,10 +456,10 @@ footer i {
   transform: translateX(-59px);
 }
 .background-menu .menu-card input[type=checkbox]:checked + label .price {
-  transform: translateX(-60px);
+  transform: translateX(-50px);
 }
-.background-menu .menu-card input[type=checkbox]:checked + label .card-text b,
-.background-menu .menu-card input[type=checkbox]:checked + label .card-text p {
+.background-menu .menu-card input[type=checkbox]:checked + label b,
+.background-menu .menu-card input[type=checkbox]:checked + label .description {
   width: 228px;
   overflow: hidden;
   white-space: nowrap;
@@ -741,7 +748,6 @@ footer i {
   .background-menu .menu .menu-subtitle {
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-top: 40px;
     padding-bottom: 6px;
     font-weight: 300;
     border-bottom: 3px solid;
