@@ -652,14 +652,11 @@ footer i {
   footer .text__footer {
     display: flex;
   }
-  footer .text__footer p {
-    margin-right: 10px;
-  }
-  footer .text__footer span {
+  footer .text__footer a {
     margin-right: 10px;
   }
   footer .text__footer .part-one, footer .text__footer .part-two {
-    display: flex;
+    flex-direction: row;
     margin-right: 30px;
   }
   footer .text__footer .part-one p {
